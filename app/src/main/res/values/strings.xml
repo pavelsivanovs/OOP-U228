@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">U228</string>
+    <string name="button_label">Uzlikt temperatūru</string>
+    <string name="input_field_hit">Ievadiet temperatūru</string>
+</resources>
