@@ -1,7 +1,6 @@
 package com.example.u228
 
 import android.content.Context
-import android.content.res.Resources
 import android.graphics.*
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.ShapeDrawable
@@ -16,11 +15,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     }
 
     fun drawTemp(temperature: Int) {
-        val temp = (temperature + 100).toFloat() / 200
-
-        println(temperature)
-        println(temp)
-        println("${0} ${height * temp} $width $height")
+        val temp = (temperature + 100).toFloat() / 200 // temperatūras pārrēķināšana uz procentuālo vērtību
         val createBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
         val canvas = Canvas(createBitmap)
 
@@ -35,6 +30,8 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
         shape.paint.color = Color.parseColor("#d9b2a9")
         shape.draw(canvas)
 
+        // createBitmap satur informāciju par aizkrāsotiem pikseļiem
+        // createBitmap uzlikām kā fonu priekš mūsu View
         background = BitmapDrawable(resources, createBitmap)
     }
 
