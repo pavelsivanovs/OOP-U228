@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">U228</string>
-    <string name="button_label">Uzlikt temperatūru</string>
-    <string name="input_field_hit">Ievadiet temperatūru</string>
+    <string name="user_hint">Ievadiet temperatūru, vilkot slīdeni</string>
+    <string name="temperature">%1$d °C</string>
+    <string name="thermometer">Thermometer</string>
+    <string name="button_label">Test</string>
 </resources>
